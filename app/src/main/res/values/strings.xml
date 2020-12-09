@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <string name="str_tvHotelName">Inka Restaurant</string>
+    <string name="str_tvHotelRateTime">5.0(200+) All days: 9:00 AM - 06.00 PM</string>
+    <string name="str_tvHotelContact">Reach us at : 9854562142</string>
+    <string name="str_btnBookTable">Book A Table</string>
+    <string name="str_tvCart">View Cart (5 Items)</string>
+    <string name="str_btnMenu">MENU</string>
+    <string name="str_tvMenuType">Starter</string>
+    <string name="str_tvMinus">-</string>
+    <string name="str_tvPlus">+</string>
+    <string name="str_tvItemCount">0</string>
+    <string name="str_tvMenu">Guac de la Costa</string>
+    <string name="str_tvMenuDetails">tortlias de mais, fruit de la passion, mango</string>
+    <string name="str_tvTitle">My Cart</string>
+    <string name="str_totoCost">total Cost</string>
+    <string name="str_tvTotoPrice">36.00</string>
+    <string name="str_tvReviewOrder">Review Order</string>
+    <string name="str_tvDeliveryOption">Delivery Option</string>
+    <string name="str_rbTakeWay">Take Way</string>
+    <string name="str_rbDineIn">Dine-in</string>
+    <string name="str_btnPlaceOrder">Place Order</string>
+    <string name="str_tvShowMore"><u>Show more</u></string>
+    <string name="str_tvNight">N</string>
+    <string name="str_tvDay">D</string>
+</resources>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.SecondActivity">-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".activities.SecondActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/clSecond">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_200"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:background="@color/transparent"
+            android:id="@+id/ibBack"
+            android:layout_width="@dimen/standard_24"
+            android:layout_height="@dimen/standard_24"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="@dimen/standard_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/str_tvTitle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintBottom_toBottomOf="@+id/ibBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toEndOf="@+id/ibBack"
+            app:layout_constraintTop_toTopOf="@+id/ibBack" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/standard_0"
+            android:layout_height="@dimen/standard_70"
+            android:layout_marginStart="@dimen/standard_120"
+            android:layout_marginEnd="@dimen/standard_120"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:srcCompat="@drawable/bg_cart_amt" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/colorYellowText"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/str_totoCost"
+            android:gravity="center"
+
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvToalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/str_tvTotoPrice"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/black"
+            app:drawableTint="@color/black"
+            android:drawableStart="@drawable/ic_baseline_euro_24"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReviewOrders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_24"
+            android:text="@string/str_tvReviewOrder"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/standard_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+   <!-- <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/tvDeliveryOption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReviewOrders"
+        tools:listitem="@layout/card_row_menu_items" />-->
+
+   <!-- <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDeliveryOption"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_12"
+        android:layout_marginBottom="24dp"
+        android:text="@string/str_tvDeliveryOption"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlaceOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbDineIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_dinner"
+            android:drawablePadding="@dimen/standard_12"
+            android:layoutDirection="rtl"
+            android:paddingLeft="@dimen/standard_24"
+            android:paddingRight="@dimen/standard_24"
+            android:text="@string/str_rbDineIn" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbTakeWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_bike"
+            android:drawablePadding="@dimen/standard_12"
+            android:layoutDirection="rtl"
+            android:paddingLeft="@dimen/standard_24"
+            android:paddingRight="@dimen/standard_24"
+            android:text="@string/str_rbTakeWay" />
+    </RadioGroup>-->
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/standard_0"
+            android:layout_height="@dimen/standard_60"
+            android:layout_marginBottom="@dimen/standard_0"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/btnPlaceOrder"
+            android:text="@string/str_btnPlaceOrder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/standard_0"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlaceOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReviewOrders">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOrder"
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_8"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/card_row_menu_items" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDeliveryOption"
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_12"
+                android:layout_marginTop="@dimen/standard_24"
+                android:text="@string/str_tvDeliveryOption"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvOrder" />
+
+            <RadioGroup
+                android:id="@+id/rgOrderType"
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_8"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDeliveryOption">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbDineIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_dinner"
+                    android:drawablePadding="@dimen/standard_12"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="@dimen/standard_24"
+                    android:paddingRight="@dimen/standard_24"
+                    android:text="@string/str_rbDineIn" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbTakeWay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_bike"
+                    android:drawablePadding="@dimen/standard_12"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="@dimen/standard_24"
+                    android:paddingRight="@dimen/standard_24"
+                    android:text="@string/str_rbTakeWay" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShowMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_4"
+                android:layout_marginEnd="@dimen/standard_4"
+                android:text="@string/str_tvShowMore"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvOrder" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+    </androidx.core.widget.NestedScrollView>-->

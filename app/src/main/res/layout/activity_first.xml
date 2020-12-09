@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FirstScreen" android:id="@+id/coordinator">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHotel"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/standard_200"
+        android:src="@drawable/bg_food"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/standard_200"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_blackshade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="@dimen/standard_24"
+        android:layout_height="@dimen/standard_24"
+        android:layout_marginStart="@dimen/standard_24"
+        android:layout_marginTop="@dimen/standard_40"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHotel"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibInfo"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/standard_24"
+        android:layout_height="@dimen/standard_24"
+        android:src="@drawable/ic_baseline_info_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHotel"
+        android:layout_marginEnd="@dimen/standard_24"
+        android:layout_marginTop="@dimen/standard_40"
+        android:background="@color/transparent"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibUP"
+        android:layout_width="@dimen/standard_24"
+        android:layout_height="@dimen/standard_24"
+        android:src="@drawable/ic_arrow_circle"
+        app:layout_constraintEnd_toStartOf="@+id/ibInfo"
+        app:layout_constraintTop_toTopOf="@+id/ivHotel"
+        android:layout_marginEnd="@dimen/standard_24"
+        android:layout_marginTop="@dimen/standard_40"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_24"
+        android:layout_marginTop="@dimen/standard_140"
+        android:layout_marginRight="@dimen/standard_24"
+        app:cardCornerRadius="@dimen/standard_2"
+        app:cardElevation="@dimen/standard_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivHotel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHotelName"
+                android:layout_width="@dimen/standard_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_20"
+                android:gravity="center"
+                android:text="@string/str_tvHotelName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHotelRateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_24"
+                android:layout_marginTop="@dimen/standard_12"
+                android:layout_marginRight="@dimen/standard_24"
+                android:drawableStart="@drawable/ic_baseline_star_border_24"
+                android:gravity="center"
+                android:text="@string/str_tvHotelRateTime"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHotelName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHotelContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_phone_in_talk_24"
+                android:gravity="center"
+                android:text="@string/str_tvHotelContact"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="@+id/tvHotelRateTime"
+                app:layout_constraintHorizontal_bias="0.605"
+                app:layout_constraintStart_toStartOf="@+id/tvHotelRateTime"
+                app:layout_constraintTop_toBottomOf="@+id/tvHotelRateTime" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBookTable"
+                android:layout_width="@dimen/standard_155"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_16"
+                android:layout_marginBottom="@dimen/standard_16"
+                android:background="@drawable/bg_button"
+                android:text="@string/str_btnBookTable"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvHotelContact"
+                app:layout_constraintStart_toStartOf="@+id/tvHotelContact"
+                app:layout_constraintTop_toBottomOf="@+id/tvHotelContact" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/standard_60"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+            android:gravity="center"
+            android:text="@string/str_tvCart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHotelMenues"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/standard_0"
+        android:layout_marginTop="@dimen/standard_24"
+        android:layout_marginBottom="@dimen/standard_10"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/card_row_menu" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_24"
+        android:paddingLeft="@dimen/standard_12"
+        android:paddingRight="@dimen/standard_12"
+        android:drawableStart="@drawable/ic_baseline_restaurant_menu_24"
+        android:text="@string/str_btnMenu"
+        android:background="@drawable/bg_menu"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

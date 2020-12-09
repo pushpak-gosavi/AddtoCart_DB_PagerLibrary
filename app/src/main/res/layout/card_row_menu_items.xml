@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="@dimen/standard_70"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_24"
+        android:layout_marginEnd="@dimen/standard_24"
+        android:background="@drawable/bg_menu_count"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRemove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_tvMinus"
+            android:textSize="@dimen/sp_16" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_tvItemCount" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_tvPlus"
+            android:textSize="@dimen/sp_16" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:background="@color/white"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="@dimen/standard_24"
+        android:layout_marginEnd="24dp"
+        android:text="@string/str_tvMenu"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutCompat2"
+        app:layout_constraintStart_toEndOf="@+id/tvNight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMenuDetails"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_8"
+        android:layout_marginEnd="12dp"
+        android:text="@string/str_tvMenuDetails"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutCompat2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/tvMenu"
+        app:layout_constraintTop_toBottomOf="@+id/tvMenu" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvmenuPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_50"
+        android:layout_marginTop="@dimen/standard_12"
+        android:drawableStart="@drawable/ic_baseline_euro_24"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/colorYellowText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMenuDetails" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNight"
+        android:layout_width="@dimen/standard_24"
+        android:layout_height="@dimen/standard_24"
+        android:layout_marginStart="@dimen/standard_12"
+        android:layout_marginTop="@dimen/standard_24"
+        android:background="@drawable/bg_textview"
+        android:gravity="center"
+        android:text="@string/str_tvNight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDay"
+        android:layout_marginStart="@dimen/standard_12"
+        android:layout_marginTop="@dimen/standard_12"
+        android:text="@string/str_tvDay"
+        android:background="@drawable/bg_textview"
+        android:gravity="center"
+        android:layout_width="@dimen/standard_24"
+        android:layout_height="@dimen/standard_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
